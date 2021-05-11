@@ -30,8 +30,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-
+    goals: 'package sonar:sonar'
 
 - task: SonarCloudAnalyze@1
 
